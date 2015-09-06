@@ -16,7 +16,7 @@ if (verify) {
 ## api
 #### api.greenLife(recId)
 
-### REST server
+## REST server
 To start the REST server, install the package globally with `npm install -g marijuana-verify` then run `marijuana-verify-server`
 
 or
@@ -48,9 +48,9 @@ Response:
 }
 ```
 
-### providers
+## providers
 * GreenLife Medical
 * 
 
-### disclaimer note
+## disclaimer note
 This API is not officially supported by any of these providers.
