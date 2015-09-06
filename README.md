@@ -13,6 +13,9 @@ if (verify) {
 }
 ```
 
+## api
+#### api.greenLife(recId)
+
 ### REST server
 To start the REST server, install the package globally with `npm install -g marijuana-verify` then run `marijuana-verify-server`
 
@@ -21,6 +24,7 @@ or
 ```
 git clone https://github.com/joshterrill/marijuana-verify.git
 cd marijuana-verify/
+npm install
 npm run start-server
 ```
 
