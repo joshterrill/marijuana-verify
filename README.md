@@ -14,7 +14,12 @@ if (verify) {
 ```
 
 ### REST server
-To start the REST server, run `npm run start-server`
+To start the REST server, run `npm run start-server` 
+
+Or deploy to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://www.heroku.com/deploy/?template=https://github.com/joshterrill/marijuana-verify)
+
 
 **GET**: `/api/:provider/:recId`
 
