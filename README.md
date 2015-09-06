@@ -15,6 +15,10 @@ if (verify) {
 
 ## api
 #### api.greenLife(recId)
+`GET /api/greenLife/:recId`
+
+#### api.patientIdCenter(recId, californiaId)
+`GET /api/patientIdCenter/:recId/:californiaId`
 
 ## REST server
 To start the REST server, install the package globally with `npm install -g marijuana-verify` then run `marijuana-verify-server`
@@ -34,23 +38,9 @@ Or deploy to Heroku
 
 Link to live REST server: http://marijuana-verify.herokuapp.com/api/
 
-
-**GET**: `/api/:provider/:recId`
-
-Example: `/api/greenLife/000000000`
-
-Response:
-```
-{
-"provider":"greenLife",
-"recId":"000000000",
-"verified":true
-}
-```
-
 ## providers
 * GreenLife Medical
-* 
+* Patient ID Center
 
 ## disclaimer note
 This API is not officially supported by any of these providers.

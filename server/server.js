@@ -10,19 +10,26 @@ var port = process.env.PORT || 8080;
 
 var router = express.Router();
 
-router.route('/:provider/:recId')
+router.route('/greenLife/:recId')
     .get(function(req, res) {
-        var provider = req.params.provider;
         var recId = req.params.recId;
-        if (provider === "greenLife") {
-            var verify = api.greenLife(recId);
-            if (verify) {
-                res.json({provider: provider, recId: recId, verified: true})
-            } else {
-                res.json({provider: provider, recId: recId, verified: false})
-            }
+        var verify = api.greenLife(recId);
+        if (verify) {
+            res.json({provider: "GreenLife Medical", recId: recId, verified: true})
         } else {
-            res.json({error: "No provider found."})
+            res.json({provider: "GreenLife Medical", recId: recId, verified: false})
+        }
+    });
+
+router.route('/patientIdCenter/:recId/:californiaId')
+    .get(function(req, res) {
+        var recId = req.params.recId;
+        var californiaId = req.params.californiaId;
+        var verify = api.patientIdCenter(recId, californiaId);
+        if (verify) {
+            res.json({provider: "Patiend ID Center", recId: recId, californiaId: californiaId, verified: true})
+        } else {
+            res.json({provider: "Patiend ID Center", recId: recId, californiaId: californiaId, verified: false})
         }
     });
 
