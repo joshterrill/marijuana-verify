@@ -37,6 +37,7 @@ Or deploy to Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://www.heroku.com/deploy/?template=https://github.com/joshterrill/marijuana-verify)
 
 Link to index landing page: http://marijuana-verify.herokuapp.com/
+
 Link to live REST server: http://marijuana-verify.herokuapp.com/api/
 
 ## providers
