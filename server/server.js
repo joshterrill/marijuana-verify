@@ -34,6 +34,7 @@ router.route('/patientIdCenter/:recId/:californiaId')
     });
 
 app.use('/api', router);
+app.use(express.static(__dirname + '/public'));
 
 app.listen(port);
 console.log('Server running on port ' + port);
