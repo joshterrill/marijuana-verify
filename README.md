@@ -37,6 +37,19 @@ verify
 
   });
 
+// Promise based pattern using ES6 `yield` keyword with the `co` module
+co(function *() {
+  var card = yield verify.greenlife({recId: '000000000000000'});
+
+  if (card.isValid) {
+
+  } else {
+
+  }
+}).catch(function (err) {
+
+});
+
 ```
 
 ## Providers
