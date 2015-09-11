@@ -1,6 +1,6 @@
 {
   "name": "marijuana-verify",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "A simple npm module that checks to see whether or not a medical marijuana patient's recommendation ID is valid or not.",
   "main": "lib/index.js",
   "repository": {
