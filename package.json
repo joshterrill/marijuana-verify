@@ -1,28 +1,35 @@
 {
-    "name": "marijuana-verify",
-    "version": "1.0.4",
-    "description": "A simple npm module that checks to see whether or not a medical marijuana patient's recommendation ID is valid or not.",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/joshterrill/marijuana-verify.git"
-    },
-    "keywords": [
-        "marijuana",
-        "weed",
-        "verification",
-        "verify",
-        "api"
-    ],
-    "author": "http://joshterrill.com",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/joshterrill/marijuana-verify/issues"
-    },
-    "homepage": "https://github.com/joshterrill/marijuana-verify#readme",
-    "dependencies": {
-        "cheerio": "^0.19.0",
-        "request": "^2.61.0",
-        "sync-request": "^2.0.1"
+  "name": "marijuana-verify",
+  "version": "2.0.0",
+  "description": "A simple npm module that checks to see whether or not a medical marijuana patient's recommendation ID is valid or not.",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshterrill/marijuana-verify.git"
+  },
+  "keywords": [
+    "marijuana",
+    "weed",
+    "verification",
+    "verify",
+    "api"
+  ],
+  "author": "http://joshterrill.com",
+  "contributors": [
+    {
+      "name": "Adam Snodgrass",
+      "email": "overra@gmail.com"
     }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshterrill/marijuana-verify/issues"
+  },
+  "homepage": "https://github.com/joshterrill/marijuana-verify#readme",
+  "dependencies": {
+    "bluebird": "^2.10.0",
+    "cheerio": "^0.19.0",
+    "lodash.zipobject": "^3.0.0",
+    "request": "^2.61.0"
+  }
 }
