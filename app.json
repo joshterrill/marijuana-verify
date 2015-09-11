@@ -1,6 +1,0 @@
-{
-  "name": "marijuana-verify",
-  "description": "A simple npm module that checks to see whether or not a medical marijuana patient's recommendation ID is valid or not.",
-  "repository": "https://github.com/joshterrill/marijuana-verify.git",
-  "keywords": ["marijuana", "weed", "verification", "verify", "api"]
-}
