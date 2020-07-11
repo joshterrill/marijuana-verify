@@ -1,6 +1,8 @@
 # marijuana-verify ![WeedLeaf](http://i.imgur.com/s7Bu0yy.gif)
 A simple node.js module that checks to see whether or not a medical marijuana patient's recommendation ID is valid or not. As I continue to build this, I will be adding more and more recommendation ID providers to the list, for now you can find the list of providers we support below. If there is a provider you want me to build into this, please drop me an email at joshterrill.dev@gmail.com
 
+*Here is a server built in Rust that accomplishes the same thing: https://github.com/joshterrill/marijuana-verification*
+
 ### Install
 `npm install marijuana-verify`
 
