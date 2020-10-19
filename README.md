@@ -10,48 +10,21 @@ A simple node.js module that checks to see whether or not a medical marijuana pa
 Each provider method will work in both a traditional asynchronous callback
 pattern as well as a Promise based pattern.  
 
+```javascript
+const verify = require('marijuana-verify');
+
+try {
+    const greenlife = await verify.greenlife('xxxxxxxxxxxx');
+    console.log(greenlife); // prints out card details
+} catch (error) {
+    // some error handling
+}
 ```
-var verify = require('marijuana-verify');
 
-// Traditional asynchronous callback
-verify.greenlife({recId: '000000000000000'}, function (err, card) {
-  if (err) {
+### Running tests
 
-  }
-
-  if (card.isValid) {
-
-  } else {
-
-  }
-});
-
-// Promise based pattern
-verify
-  .greenlife({recId: '000000000000000'})
-  .then(function (card) {
-    if (card.isValid) {
-
-    } else {
-
-    }
-  }, function (err) {
-
-  });
-
-// Promise based pattern using ES6 `yield` keyword with the `co` module
-co(function *() {
-  var card = yield verify.greenlife({recId: '000000000000000'});
-
-  if (card.isValid) {
-
-  } else {
-
-  }
-}).catch(function (err) {
-
-});
-
+```
+npm test
 ```
 
 ## Providers
@@ -64,11 +37,8 @@ Additional card details:
 * doctor: Name of issuing doctor
 * initials: Patient's initials
 
-### Patient ID Center
-Method: `verify.patientIdCenter`
-
 ## Disclaimer note
 This API is not officially supported by any of these providers.
 
 ## License
-ISC
+MIT
